@@ -1,0 +1,11 @@
+{
+  "name": "ts-config",
+  "version": "1.0.0",
+  "files": [
+    "nextjs.json"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
