@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "paths": {
+      "@themes": ["src/styles/themes/index.ts"]
+    },
+
     "plugins": [
       {
         "name": "next"
@@ -12,11 +16,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "../../packages/vitest-setup/index.ts"
+    "../../packages/vitest-setup/index.ts",
+    "src/styles/styled.d.ts"
   ],
-  "exclude": [
-    "node_modules",
-    ".next"
-  ],
+  "exclude": ["node_modules", ".next"],
   "extends": "ts-config/nextjs.json"
 }
