@@ -1,1 +1,1 @@
-export * from './InputComponent';
+export * from './Molecules/InputContainer';

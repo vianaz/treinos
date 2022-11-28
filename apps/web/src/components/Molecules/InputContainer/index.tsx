@@ -1,19 +1,20 @@
-import Image from 'next/image';
 import { useMemo, useState } from 'react';
+
+import { InputIcon, Input, Label } from '@atoms';
 
 import * as S from './styles';
 
-export type InputComponentProps = {
+export type InputContainerProps = {
   label: string;
   placeholder?: string;
   type: 'text' | 'email' | 'password';
 };
 
-export const InputComponent = ({
+export const InputContainer = ({
   label,
   type,
   placeholder
-}: InputComponentProps): JSX.Element => {
+}: InputContainerProps): JSX.Element => {
   const [show, setShow] = useState<boolean>(false);
 
   const showInput = useMemo(() => {
@@ -27,24 +28,20 @@ export const InputComponent = ({
 
   return (
     <S.Container>
-      <label htmlFor={type}>{label}</label>
-
-      <S.Input>
-        <input type={showInput} placeholder={placeholder} />
+      <Label type={type} label={label} />
+      <Input type={showInput} placeholder={placeholder}>
         <IfComponent condition={type === 'password'}>
-          <Image
+          <InputIcon
             src={
               show
                 ? '/icons/close_eye_light.svg'
                 : '/icons/eye_light.svg'
             }
-            alt="Eye Password"
-            width={24}
-            height={24}
+            alt="olhozinho"
             onClick={handleShow}
           />
         </IfComponent>
-      </S.Input>
+      </Input>
     </S.Container>
   );
 };

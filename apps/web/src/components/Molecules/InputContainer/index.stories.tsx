@@ -1,18 +1,18 @@
 import { Meta, StoryObj } from '@storybook/react';
 
-import { InputComponent, InputComponentProps } from '.';
+import { InputContainer, InputContainerProps } from '.';
 
 export default {
-  title: 'Components/InputComponent',
-  component: InputComponent,
+  title: 'Components/InputContainer',
+  component: InputContainer,
   args: {
     label: 'Label',
     type: 'text',
     placeholder: 'Placeholder'
   }
-} as Meta<InputComponentProps>;
+} as Meta<InputContainerProps>;
 
-export const Text: StoryObj<InputComponentProps> = {
+export const Text: StoryObj<InputContainerProps> = {
   args: {
     label: 'Name',
     type: 'text',
@@ -20,7 +20,7 @@ export const Text: StoryObj<InputComponentProps> = {
   }
 };
 
-export const Email: StoryObj<InputComponentProps> = {
+export const Email: StoryObj<InputContainerProps> = {
   args: {
     label: 'Email',
     type: 'email',
@@ -28,7 +28,7 @@ export const Email: StoryObj<InputComponentProps> = {
   }
 };
 
-export const Password: StoryObj<InputComponentProps> = {
+export const Password: StoryObj<InputContainerProps> = {
   args: {
     label: 'Password',
     type: 'password',

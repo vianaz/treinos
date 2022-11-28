@@ -1,11 +1,11 @@
 import type { NextPage } from 'next';
 
-import { InputComponent } from '@components';
+import { InputContainer } from '@molecules';
 
 const Home: NextPage = () => {
   return (
     <div>
-      <InputComponent
+      <InputContainer
         type="password"
         label="Password"
         placeholder="Informação"

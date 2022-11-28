@@ -4,14 +4,14 @@ import userEvent from '@testing-library/user-event';
 import { ThemeProvider } from 'styled-components';
 import { faker } from '@faker-js/faker';
 
-import { InputComponent, InputComponentProps } from '.';
+import { InputContainer, InputContainerProps } from '.';
 import { themeLight } from '@themes';
 
 const makeSut = ({
   label = 'Password',
   type = 'password',
   placeholder
-}: Partial<InputComponentProps>) => {
+}: Partial<InputContainerProps>) => {
   const props = {
     label,
     type,
@@ -20,7 +20,7 @@ const makeSut = ({
 
   return render(
     <ThemeProvider theme={themeLight}>
-      <InputComponent {...props} />
+      <InputContainer {...props} />
     </ThemeProvider>
   );
 };
@@ -31,6 +31,7 @@ describe('Testing Suite for Input Component', () => {
       const { container } = makeSut({});
 
       expect(container).toBeInTheDocument();
+      expect(container).toMatchSnapshot();
     });
 
     it('should render the component with type password', () => {
@@ -76,6 +77,7 @@ describe('Testing Suite for Input Component', () => {
       const { container } = makeSut({ type: 'email' });
 
       expect(container).toBeInTheDocument();
+      expect(container).toMatchSnapshot();
     });
 
     it('should render the component with type email', () => {
@@ -111,6 +113,7 @@ describe('Testing Suite for Input Component', () => {
       const { container } = makeSut({ type: 'text' });
 
       expect(container).toBeInTheDocument();
+      expect(container).toMatchSnapshot();
     });
 
     it('should render the component with type text', () => {

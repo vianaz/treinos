@@ -7,7 +7,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@themes': '/src/styles/themes/index.ts',
-      '@components': '/src/components/index.ts'
+      '@components': '/src/components/index.ts',
+      '@atoms': '/src/components/Atoms/index.ts'
     }
   },
 

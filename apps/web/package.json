@@ -46,6 +46,7 @@
     "@vitejs/plugin-react": "^2.2.0",
     "babel-loader": "^8.3.0",
     "eslint-config-custom": "*",
+    "jest-styled-components": "^7.1.1",
     "jsdom": "^20.0.3",
     "storybook-addon-next": "^1.6.10",
     "storybook-dark-mode": "^1.1.2",

@@ -1,2 +1,0 @@
-// (fazer um error handler, pra abstrair a lógica e só soltar um throw error)
-[] Fazer validação de senha no próprio input 
