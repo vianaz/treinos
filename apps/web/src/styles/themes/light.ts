@@ -20,7 +20,7 @@ export const themeLight = {
       300: '#BBBBBB',
       400: '#8F8F8F'
     },
-    secundary: {
+    secondary: {
       default: '#5C00D1',
       100: '#B881FF',
       200: '#770DFF'
@@ -83,5 +83,8 @@ export const themeLight = {
     md: '768px',
     lg: '992px',
     xl: '1200px'
+  },
+  width: {
+    md: '11.875rem'
   }
 };

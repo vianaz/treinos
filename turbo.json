@@ -4,7 +4,7 @@
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**"],
-      "inputs": ["web/**/*.{ts,tsx}"]
+      "inputs": ["src/**", "tsconfig.json", "next.config.js"]
     },
     "lint": {
       "outputs": []

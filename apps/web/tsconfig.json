@@ -22,6 +22,6 @@
     "../../packages/vitest-setup/index.ts",
     "src/styles/styled.d.ts"
   ],
-  "exclude": ["node_modules", ".next"],
-  "extends": "ts-config/nextjs.json"
+  "extends": "ts-config/nextjs.json",
+  "exclude": ["node_modules", ".next"]
 }

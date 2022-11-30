@@ -4,10 +4,12 @@ import { themes } from '@storybook/theming';
 import { ThemeProvider } from 'styled-components';
 
 import { themeLight } from '../src/styles/themes/light';
+import { ResetStyle } from '../src/styles/globals.ts';
 
 export const decorators = [
   Story => (
     <ThemeProvider theme={themeLight}>
+      <ResetStyle />
       <Story />
     </ThemeProvider>
   )

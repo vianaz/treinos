@@ -6,6 +6,7 @@ export const Label = styled.label`
   font-size: ${({ theme }) => theme.fonts.fontSize['2xl']};
   color: ${({ theme }) => theme.colors.black.default};
   font-weight: ${({ theme }) => theme.fonts.fontWeight.regular};
+  font-family: 'Open Sans', sans-serif;
 
   margin-bottom: ${({ theme }) => theme.spacing.xs};
 

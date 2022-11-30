@@ -1,7 +1,7 @@
 import * as S from './styles';
 
 export type LabelProps = {
-  type: 'text' | 'email' | 'password';
+  type: string;
   label?: string;
 };
 

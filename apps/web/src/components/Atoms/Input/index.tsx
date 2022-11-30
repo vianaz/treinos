@@ -1,8 +1,10 @@
+import { HTMLInputTypeAttribute } from 'react';
+
 import * as S from './styles';
 
 export type InputProps = {
   error?: boolean;
-  type: 'text' | 'email' | 'password';
+  type: HTMLInputTypeAttribute;
   placeholder?: string;
   children?: React.ReactNode;
 };

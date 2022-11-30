@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { HTMLInputTypeAttribute, useMemo, useState } from 'react';
 
 import { InputIcon, Input, Label } from '@atoms';
 
@@ -7,7 +7,7 @@ import * as S from './styles';
 export type InputContainerProps = {
   label: string;
   placeholder?: string;
-  type: 'text' | 'email' | 'password';
+  type: HTMLInputTypeAttribute | string;
 };
 
 export const InputContainer = ({
