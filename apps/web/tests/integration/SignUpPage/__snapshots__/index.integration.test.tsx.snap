@@ -1,0 +1,236 @@
+// Vitest Snapshot v1
+
+exports[`Sign Up Page > Render Tests > should render sign up page correct 1`] = `
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 16rem;
+  padding: 0.5rem;
+  margin: 0px 10px;
+  border: 1px solid #BBBBBB;
+  border-radius: 0.5rem;
+}
+
+.c5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: 1rem;
+  -webkit-letter-spacing: 0.07rem;
+  -moz-letter-spacing: 0.07rem;
+  -ms-letter-spacing: 0.07rem;
+  letter-spacing: 0.07rem;
+  border: none;
+  background: transparent;
+}
+
+.c5:focus {
+  outline: none;
+}
+
+.c3 {
+  -webkit-letter-spacing: 0.05rem;
+  -moz-letter-spacing: 0.05rem;
+  -ms-letter-spacing: 0.05rem;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  color: #BBBBBB;
+  font-weight: 400;
+  font-family: 'Open Sans',sans-serif;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+.c6 {
+  width: 190px;
+  height: 64px;
+  aspect-ratio: 21 / 9;
+  border-radius: 10px;
+  border: none;
+  background-color: #FF4800;
+}
+
+.c6:hover {
+  cursor: pointer;
+}
+
+.c7 {
+  font-size: 1.25rem;
+  font-family: 'Open Sans',sans-serif;
+  -webkit-letter-spacing: 0.1rem;
+  -moz-letter-spacing: 0.1rem;
+  -ms-letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
+  color: #fff;
+}
+
+.c8 {
+  font-size: 0.938rem;
+  font-family: 'Open Sans',sans-serif;
+  -webkit-letter-spacing: 0.1rem;
+  -moz-letter-spacing: 0.1rem;
+  -ms-letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
+  color: #BBBBBB;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 18rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.c1 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FF5A1A;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+<div>
+  <main
+    class="c0"
+  >
+    <form
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <label
+          class="c3"
+          data-testid="label-input"
+          for="text"
+        >
+          email
+        </label>
+        <div
+          class="c4"
+        >
+          <input
+            class="c5"
+            data-testid="input"
+            name="email"
+            placeholder="email@treinós.com"
+            type="text"
+          />
+        </div>
+      </div>
+      <div
+        class="c2"
+      >
+        <label
+          class="c3"
+          data-testid="label-input"
+          for="password"
+        >
+          senha
+        </label>
+        <div
+          class="c4"
+        >
+          <input
+            class="c5"
+            data-testid="input"
+            name="password"
+            placeholder="********"
+            type="password"
+          />
+          <img
+            alt="show password"
+            data-nimg="1"
+            decoding="async"
+            height="20"
+            loading="lazy"
+            src="/icons/eye_light.svg"
+            srcset="/icons/eye_light.svg 1x, /icons/eye_light.svg 2x"
+            style="color: transparent;"
+            width="20"
+          />
+        </div>
+      </div>
+      <div
+        class="c2"
+      >
+        <label
+          class="c3"
+          data-testid="label-input"
+          for="date"
+        >
+          data de nascimento
+        </label>
+        <div
+          class="c4"
+        >
+          <input
+            class="c5"
+            data-testid="input"
+            name="bornDate"
+            placeholder="dd/mm/aaaa"
+            type="date"
+          />
+        </div>
+      </div>
+      <button
+        class="c6"
+        data-testid="button"
+      >
+        <p
+          class="c7"
+          type="primary"
+        >
+          Cadastrar
+        </p>
+      </button>
+      <p
+        class="c8"
+        type="tertiary"
+      >
+        Ja tem uma conta? Faca 
+        <a
+          href="/signin"
+        >
+          login
+        </a>
+      </p>
+    </form>
+  </main>
+</div>
+`;

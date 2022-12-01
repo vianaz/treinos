@@ -22,14 +22,14 @@ export const handleValidate = (inputValues: InputValues) => {
       .min(8)
       .messages({
         'string.min': '*A senha deve ter no mínimo 8 caracteres',
-        'string.empty': '*A senha é obrigatória'
+        'string.empty': '*Senha é obrigatória'
       })
       .required(),
     bornDate: Joi.date()
       .max(`01-01-${eighteenYearsAgo}`)
       .messages({
         'date.max': '*Você deve ter no mínimo 18 anos',
-        'date.base': '*A data de nascimento é obrigatória'
+        'date.base': '*Data de nascimento é obrigatória'
       })
       .required()
   });

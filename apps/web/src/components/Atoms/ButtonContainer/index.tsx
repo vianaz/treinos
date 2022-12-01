@@ -13,7 +13,11 @@ export const ButtonContainer = ({
   children
 }: ButtonContainerProps): JSX.Element => {
   return (
-    <S.Button typeButton={typeButton} onClick={onClick}>
+    <S.Button
+      typeButton={typeButton}
+      onClick={onClick}
+      data-testid="button"
+    >
       {children}
     </S.Button>
   );
