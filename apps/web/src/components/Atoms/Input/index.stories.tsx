@@ -11,3 +11,9 @@ export default {
 export const Default: StoryObj<InputProps> = {
   args: {}
 };
+
+export const WithPlaceholder: StoryObj<InputProps> = {
+  args: {
+    placeholder: 'Placeholder'
+  }
+};

@@ -11,7 +11,7 @@ const SecondaryColor = css`
 `;
 
 const TertiaryColor = css`
-  color: ${({ theme }) => theme.colors.black[100]};
+  color: ${({ theme }) => theme.colors.black[300]};
 `;
 
 type TextStyleProps = Omit<TextProps, 'children'>;

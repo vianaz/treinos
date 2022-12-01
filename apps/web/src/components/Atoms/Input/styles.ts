@@ -2,7 +2,14 @@ import styled from 'styled-components';
 
 import { InputProps } from '.';
 
-export const InputWrapper = styled.div<Pick<InputProps, 'error'>>`
+type ErrorProps = Pick<InputProps, 'error'>;
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const InputWrapper = styled.div<ErrorProps>`
   display: flex;
 
   width: 16rem;

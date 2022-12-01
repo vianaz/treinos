@@ -35,3 +35,20 @@ export const Password: StoryObj<InputContainerProps> = {
     placeholder: 'Type your password'
   }
 };
+
+export const Date: StoryObj<InputContainerProps> = {
+  args: {
+    label: 'Date',
+    type: 'date',
+    placeholder: 'dd/mm/aaaa'
+  }
+};
+
+export const Error: StoryObj<InputContainerProps> = {
+  args: {
+    label: 'Name',
+    type: 'text',
+    placeholder: 'Type your name',
+    errorMessage: '*This field is required'
+  }
+};

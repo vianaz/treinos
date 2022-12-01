@@ -1,4 +1,9 @@
-import { HTMLInputTypeAttribute, useMemo, useState } from 'react';
+import {
+  HTMLInputTypeAttribute,
+  RefObject,
+  useMemo,
+  useState
+} from 'react';
 
 import { InputIcon, Input, Label } from '@atoms';
 
@@ -6,14 +11,20 @@ import * as S from './styles';
 
 export type InputContainerProps = {
   label: string;
+  name?: string;
   placeholder?: string;
-  type: HTMLInputTypeAttribute | string;
+  type: HTMLInputTypeAttribute;
+  errorMessage?: string;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
 export const InputContainer = ({
   label,
   type,
-  placeholder
+  placeholder,
+  errorMessage,
+  name,
+  onChange
 }: InputContainerProps): JSX.Element => {
   const [show, setShow] = useState<boolean>(false);
 
@@ -28,8 +39,14 @@ export const InputContainer = ({
 
   return (
     <S.Container>
-      <Label type={type} label={label} />
-      <Input type={showInput} placeholder={placeholder}>
+      <Label type={type} label={label} error={!!errorMessage} />
+      <Input
+        name={name}
+        type={showInput}
+        placeholder={placeholder}
+        error={!!errorMessage}
+        onChange={onChange}
+      >
         <IfComponent condition={type === 'password'}>
           <InputIcon
             src={
@@ -37,11 +54,16 @@ export const InputContainer = ({
                 ? '/icons/close_eye_light.svg'
                 : '/icons/eye_light.svg'
             }
-            alt="olhozinho"
+            alt="show password"
             onClick={handleShow}
           />
         </IfComponent>
       </Input>
+      {errorMessage && (
+        <S.ErrorMessage data-testid="error-message">
+          {errorMessage}
+        </S.ErrorMessage>
+      )}
     </S.Container>
   );
 };

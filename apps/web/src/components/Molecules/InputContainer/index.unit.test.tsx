@@ -10,12 +10,14 @@ import { themeLight } from '@themes';
 const makeSut = ({
   label = 'Password',
   type = 'password',
-  placeholder
+  placeholder,
+  errorMessage
 }: Partial<InputContainerProps>) => {
   const props = {
     label,
     type,
-    placeholder
+    placeholder,
+    errorMessage
   };
 
   return render(
@@ -42,7 +44,7 @@ describe('Testing Suite for Input Component', () => {
       expect(input).toHaveAttribute('type', 'password');
     });
 
-    it('should writte correct in input', () => {
+    it('should write correct in input', () => {
       const { container } = makeSut({});
       const password = faker.internet.password(8);
 
@@ -88,7 +90,7 @@ describe('Testing Suite for Input Component', () => {
       expect(input).toHaveAttribute('type', 'email');
     });
 
-    it('should writte correct in input', () => {
+    it('should write correct in input', () => {
       const { container } = makeSut({ type: 'email' });
       const email = faker.internet.email();
 
@@ -124,7 +126,7 @@ describe('Testing Suite for Input Component', () => {
       expect(input).toHaveAttribute('type', 'text');
     });
 
-    it('should writte correct in input', () => {
+    it('should write correct in input', () => {
       const { container } = makeSut({ type: 'text' });
       const text = faker.lorem.words(5);
 
@@ -141,6 +143,21 @@ describe('Testing Suite for Input Component', () => {
       const image = container.querySelector('img');
 
       expect(image).not.toBeInTheDocument();
+    });
+
+    it('should render in error mode', () => {
+      const { getByTestId, container } = makeSut({
+        errorMessage: 'Error Message'
+      });
+
+      const label = getByTestId('label-input');
+      const errorMessage = getByTestId('error-message');
+
+      expect(label).toHaveStyle('color: #FF5A1A');
+      expect(errorMessage).toBeInTheDocument();
+      expect(errorMessage).toHaveStyle('color: #FF5A1A');
+      expect(errorMessage).toHaveTextContent('Error Message');
+      expect(container).toMatchSnapshot();
     });
   });
 });
