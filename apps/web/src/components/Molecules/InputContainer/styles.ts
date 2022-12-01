@@ -5,6 +5,11 @@ export const Container = styled.div`
   flex-direction: column;
 
   width: 18rem;
+
+  .forgot-password {
+    margin-top: ${({ theme }) => theme.spacing.xs};
+    margin-left: auto;
+  }
 `;
 
 export const ErrorMessage = styled.p`

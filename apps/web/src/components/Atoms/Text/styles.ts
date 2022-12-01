@@ -14,6 +14,10 @@ const TertiaryColor = css`
   color: ${({ theme }) => theme.colors.black[300]};
 `;
 
+const QuaternaryColor = css`
+  color: ${({ theme }) => theme.colors.primary[900]};
+`;
+
 type TextStyleProps = Omit<TextProps, 'children'>;
 
 export const Text = styled.p<TextStyleProps>`
@@ -25,4 +29,5 @@ export const Text = styled.p<TextStyleProps>`
   ${({ type }) => type === 'primary' && PrimaryColor}
   ${({ type }) => type === 'secondary' && SecondaryColor}
   ${({ type }) => type === 'tertiary' && TertiaryColor}
+  ${({ type }) => type === 'quaternary' && QuaternaryColor}
 `;

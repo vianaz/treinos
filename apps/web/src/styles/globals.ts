@@ -12,4 +12,9 @@ export const ResetStyle = createGlobalStyle`
   body {
     height: 100vh;
   }
+
+  a {
+    text-decoration-color: ${({ theme }) =>
+      theme.colors.primary[900]};
+  }
 `;

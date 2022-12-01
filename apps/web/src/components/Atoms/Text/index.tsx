@@ -3,7 +3,7 @@ import * as S from './styles';
 export type TextProps = {
   children: React.ReactNode;
   bold?: boolean;
-  type?: 'primary' | 'secondary' | 'tertiary';
+  type?: 'primary' | 'secondary' | 'tertiary' | 'quaternary' | '';
   size?:
     | 'xs'
     | 'sm'
@@ -23,7 +23,7 @@ export type TextProps = {
 
 export const Text = ({
   bold = false,
-  type = 'primary',
+  type = '',
   children,
   size = 'md'
 }: TextProps): JSX.Element => {

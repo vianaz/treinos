@@ -1,17 +1,17 @@
+import { useRouter } from 'next/router';
+
+import { useEffect } from 'react';
+
 import type { NextPage } from 'next';
 
-import { InputContainer } from '@molecules';
-
 const Home: NextPage = () => {
-  return (
-    <div>
-      <InputContainer
-        type="password"
-        label="Password"
-        placeholder="Informação"
-      />
-    </div>
-  );
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push('/signin');
+  }, [router]);
+
+  return <div></div>;
 };
 
 export default Home;

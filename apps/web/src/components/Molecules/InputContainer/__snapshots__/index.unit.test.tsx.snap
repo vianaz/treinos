@@ -54,6 +54,11 @@ exports[`Testing Suite for Input Component > Input Component in Email Mode > sho
   width: 18rem;
 }
 
+.c0 .forgot-password {
+  margin-top: 0.5rem;
+  margin-left: auto;
+}
+
 <div>
   <div
     class="c0"
@@ -131,6 +136,11 @@ exports[`Testing Suite for Input Component > Input Component in Password Mode > 
   -ms-flex-direction: column;
   flex-direction: column;
   width: 18rem;
+}
+
+.c0 .forgot-password {
+  margin-top: 0.5rem;
+  margin-left: auto;
 }
 
 <div>
@@ -221,6 +231,11 @@ exports[`Testing Suite for Input Component > Input Component in Text Mode > shou
   -ms-flex-direction: column;
   flex-direction: column;
   width: 18rem;
+}
+
+.c0 .forgot-password {
+  margin-top: 0.5rem;
+  margin-left: auto;
 }
 
 .c4 {
@@ -325,6 +340,11 @@ exports[`Testing Suite for Input Component > Input Component in Text Mode > shou
   -ms-flex-direction: column;
   flex-direction: column;
   width: 18rem;
+}
+
+.c0 .forgot-password {
+  margin-top: 0.5rem;
+  margin-left: auto;
 }
 
 <div>

@@ -37,7 +37,7 @@ export const FormSignUp = (): JSX.Element => {
         onChange={handleInputChange}
       />
       <ButtonContainer>
-        <Text size="4xl" bold>
+        <Text type="primary" size="4xl" bold>
           Cadastrar
         </Text>
       </ButtonContainer>

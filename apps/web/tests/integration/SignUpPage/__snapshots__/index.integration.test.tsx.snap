@@ -87,6 +87,11 @@ exports[`Sign Up Page > Render Tests > should render sign up page correct 1`] = 
   width: 18rem;
 }
 
+.c2 .forgot-password {
+  margin-top: 0.5rem;
+  margin-left: auto;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;

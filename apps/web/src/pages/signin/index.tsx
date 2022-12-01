@@ -1,7 +1,9 @@
 import type { NextPage } from 'next';
 
+import { SignIn } from '@templates';
+
 const SignInPage: NextPage = () => {
-  return <div>sou um sign in</div>;
+  return <SignIn />;
 };
 
 export default SignInPage;

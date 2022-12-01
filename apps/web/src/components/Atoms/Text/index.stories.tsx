@@ -6,6 +6,7 @@ export default {
   title: 'Atoms/Text',
   component: Text,
   args: {
+    type: 'primary',
     children: 'Text'
   }
 } as Meta<TextProps>;
@@ -14,7 +15,7 @@ export const Primary: StoryObj<TextProps> = {
   args: {}
 };
 
-export const Secundary: StoryObj<TextProps> = {
+export const Secondary: StoryObj<TextProps> = {
   args: {
     type: 'secondary'
   }
@@ -23,5 +24,11 @@ export const Secundary: StoryObj<TextProps> = {
 export const Tertiary: StoryObj<TextProps> = {
   args: {
     type: 'tertiary'
+  }
+};
+
+export const Quaternary: StoryObj<TextProps> = {
+  args: {
+    type: 'quaternary'
   }
 };

@@ -15,6 +15,7 @@ export type InputContainerProps = {
   placeholder?: string;
   type: HTMLInputTypeAttribute;
   errorMessage?: string;
+  children?: React.ReactNode;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
@@ -24,6 +25,7 @@ export const InputContainer = ({
   placeholder,
   errorMessage,
   name,
+  children,
   onChange
 }: InputContainerProps): JSX.Element => {
   const [show, setShow] = useState<boolean>(false);
@@ -64,6 +66,7 @@ export const InputContainer = ({
           {errorMessage}
         </S.ErrorMessage>
       )}
+      {children}
     </S.Container>
   );
 };
