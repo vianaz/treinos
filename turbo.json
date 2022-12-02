@@ -6,6 +6,18 @@
       "outputs": ["dist/**", ".next/**"],
       "inputs": ["src/**", "tsconfig.json", "next.config.js"]
     },
+    "test:unit": {
+      "dependsOn": ["^build"],
+      "inputs": ["src/**", "tsconfig.json"]
+    },
+    "test:integration": {
+      "dependsOn": ["^build"],
+      "inputs": ["test/**", "tsconfig.json"]
+    },
+    "test:e2e": {
+      "dependsOn": ["^build"],
+      "inputs": ["test/**", "tsconfig.json"]
+    },
     "lint": {
       "outputs": []
     },

@@ -20,6 +20,11 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: ['vitest-setup'],
 
-    watch: false
+    watch: false,
+    coverage: {
+      enabled: true
+    },
+
+    include: ['**/*.unit.test.tsx', '**/*.integration.test.tsx']
   }
 });

@@ -19,6 +19,6 @@
         "name": "next"
       }
     ],
-    "types": ["vitest/globals", "node"]
+    "types": ["vitest/globals", "node", "cypress"]
   }
 }
