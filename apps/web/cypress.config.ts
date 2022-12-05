@@ -6,6 +6,9 @@ export default defineConfig({
       // implement node event listeners here
     },
     specPattern: '**/*.e2e.test.{ts,tsx}',
-    supportFile: false
+    supportFile: false,
+    video: false,
+    videoCompression: false,
+    experimentalStudio: true
   }
 });

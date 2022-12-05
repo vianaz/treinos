@@ -1,9 +1,4 @@
-import {
-  HTMLInputTypeAttribute,
-  RefObject,
-  useMemo,
-  useState
-} from 'react';
+import { HTMLInputTypeAttribute, useMemo, useState } from 'react';
 
 import { InputIcon, Input, Label } from '@atoms';
 

@@ -14,16 +14,23 @@
       {
         "name": "next"
       }
-    ]
+    ],
+
+    "types": ["vitest/globals", "node"]
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
     "../../packages/vitest-setup/index.ts",
+    ".next/types/**/*.ts",
     "src/styles/styled.d.ts"
   ],
   "extends": "ts-config/nextjs.json",
-  "exclude": ["node_modules", ".next"]
+  "exclude": [
+    "node_modules",
+    ".next",
+    "cypress",
+    "cypress.config.ts"
+  ]
 }
